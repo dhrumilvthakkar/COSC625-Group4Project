@@ -6,6 +6,7 @@ import AccountPage from "./pages/AccountPage";
 import LoginPage from "./pages/LoginPage";
 import RecoverPage from "./pages/RecoverPage";
 import LandingPage from "./components/LandingPage/LandingPage";
+import AboutPage from "./components/About/AboutPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="p-6">
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/recover" element={<RecoverPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
